@@ -7,15 +7,28 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+    @StateObject var viewModel = ViewModel()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack{
+            NavigationView{
+                List{
+                    ForEach(viewModel.participants, id: \.participantId){
+                        Participant in
+                        
+                        VStack(alignment: .leading){
+                            Text(Participant.participantName)
+                            Text(Participant.participantStream)
+                        }
+                    }.padding()
+                }.navigationTitle("GET")
+                
+            }
+            .onAppear{
+                viewModel.get()
+            }
         }
-        .padding()
     }
 }
 

@@ -1,0 +1,22 @@
+//
+//  PostView.swift
+//  apicall
+//
+//  Created by ST SE on 7/6/2023.
+//
+
+import SwiftUI
+
+struct PostView: View {
+    
+@StateObject var viewModel = ViewModel()
+    var body: some View {
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    }
+}
+
+struct PostView_Previews: PreviewProvider {
+    static var previews: some View {
+        PostView()
+    }
+}
