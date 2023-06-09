@@ -9,25 +9,20 @@ import SwiftUI
 
 
 struct ContentView: View {
-    @StateObject var viewModel = ViewModel()
+    @StateObject var apiModel = viewModel()
     var body: some View {
-        VStack{
-            NavigationView{
-                List{
-                    ForEach(viewModel.participants, id: \.participantId){
-                        Participant in
-                        
-                        VStack(alignment: .leading){
-                            Text(Participant.participantName)
-                            Text(Participant.participantStream)
-                        }
-                    }.padding()
-                }.navigationTitle("GET")
-                
+        
+        NavigationView{
+            List{
+                ForEach(apiModel.participants, id: \.participantId){
+                    Participant in
+                    VStack(alignment: .leading){
+                        Text(Participant.participantName)
+                    }
+                }
             }
-            .onAppear{
-                viewModel.get()
-            }
+        }.onAppear{
+            apiModel.fetch()
         }
     }
 }

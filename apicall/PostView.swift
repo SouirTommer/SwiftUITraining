@@ -8,10 +8,29 @@
 import SwiftUI
 
 struct PostView: View {
-    
-@StateObject var viewModel = ViewModel()
+    @StateObject var apimodel = viewModel()
+    @State var name = ""
+    @State var stream = ""
+    @State var showAlert = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            TextField("name", text: $name)
+                .textFieldStyle(.roundedBorder)
+            TextField("stream", text: $stream)
+                .textFieldStyle(.roundedBorder)
+            Button(action: {
+                apimodel.post(name: name, stream: stream)
+                showAlert = true
+                name = ""
+                stream = ""
+            }, label:
+                    {
+                        Text("Add")
+                    }
+            ).alert("Added", isPresented: $showAlert){
+                
+            }
+        }.padding()
     }
 }
 
