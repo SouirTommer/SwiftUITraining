@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PostView: View {
-    @StateObject var apimodel = viewModel()
+    @StateObject var api = viewModel()
     @State var name = ""
     @State var stream = ""
     @State var showAlert = false
@@ -19,19 +19,16 @@ struct PostView: View {
             TextField("stream", text: $stream)
                 .textFieldStyle(.roundedBorder)
             Button(action: {
-                apimodel.post(name: name, stream: stream)
+                api.post(name: name, stream: stream)
                 showAlert = true
-                name = ""
-                stream = ""
-            }, label:
-                    {
-                        Text("Add")
-                    }
-            ).alert("Added", isPresented: $showAlert){
-                
-            }
+            }, label: {
+                Text("Add")
+            })
+            .alert("Added", isPresented: $showAlert){}
         }.padding()
+        
     }
+    
 }
 
 struct PostView_Previews: PreviewProvider {

@@ -9,20 +9,22 @@ import SwiftUI
 
 
 struct ContentView: View {
-    @StateObject var apiModel = viewModel()
     var body: some View {
-        
-        NavigationView{
-            List{
-                ForEach(apiModel.participants, id: \.participantId){
-                    Participant in
-                    VStack(alignment: .leading){
-                        Text(Participant.participantName)
-                    }
-                }
+        TabView{
+            
+            GetView().tabItem{
+                NavigationLink(destination: GetView()) {
+                    Image(systemName: "target")
+                    Text("Get")
+                }.tag(1)
             }
-        }.onAppear{
-            apiModel.fetch()
+            
+            PostView().tabItem{
+                NavigationLink(destination: PostView()) {
+                    Image(systemName: "signpost.left")
+                    Text("Post")
+                }.tag(2)
+            }
         }
     }
 }

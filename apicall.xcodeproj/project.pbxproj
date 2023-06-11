@@ -13,6 +13,7 @@
 		2A2DC4C72A30C1B000E3421F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A2DC4C62A30C1B000E3421F /* Preview Assets.xcassets */; };
 		2A2DC4D52A30CD8900E3421F /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DC4D42A30CD8900E3421F /* PostView.swift */; };
 		2A2DC4D72A30CDE400E3421F /* viewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DC4D62A30CDE400E3421F /* viewModel.swift */; };
+		2A2DC4DB2A33851C00E3421F /* GetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DC4DA2A33851C00E3421F /* GetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2A2DC4D32A30CB5400E3421F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2A2DC4D42A30CD8900E3421F /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		2A2DC4D62A30CDE400E3421F /* viewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewModel.swift; sourceTree = "<group>"; };
+		2A2DC4DA2A33851C00E3421F /* GetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +61,9 @@
 				2A2DC4D32A30CB5400E3421F /* Info.plist */,
 				2A2DC4BF2A30C1AE00E3421F /* apicallApp.swift */,
 				2A2DC4C12A30C1AE00E3421F /* ContentView.swift */,
-				2A2DC4D62A30CDE400E3421F /* viewModel.swift */,
+				2A2DC4DA2A33851C00E3421F /* GetView.swift */,
 				2A2DC4D42A30CD8900E3421F /* PostView.swift */,
+				2A2DC4D62A30CDE400E3421F /* viewModel.swift */,
 				2A2DC4C32A30C1B000E3421F /* Assets.xcassets */,
 				2A2DC4C52A30C1B000E3421F /* Preview Content */,
 			);
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A2DC4C22A30C1AE00E3421F /* ContentView.swift in Sources */,
+				2A2DC4DB2A33851C00E3421F /* GetView.swift in Sources */,
 				2A2DC4D52A30CD8900E3421F /* PostView.swift in Sources */,
 				2A2DC4D72A30CDE400E3421F /* viewModel.swift in Sources */,
 				2A2DC4C02A30C1AE00E3421F /* apicallApp.swift in Sources */,
