@@ -22,6 +22,7 @@ struct GetView: View {
                 }
                 
             }.navigationTitle("WorldSkill - GET")
+                .listStyle(.inset)
             
         }.onAppear{
             api.fetch()

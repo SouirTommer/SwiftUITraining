@@ -28,7 +28,7 @@ struct ContentView: View {
             
             WorldSkillEventView().tabItem{
                 NavigationLink(destination: WorldSkillEventView()) {
-                    Image(systemName: "signpost.left")
+                    Image(systemName: "paperplane")
                     Text("Events")
                 }.tag(3)
             }

@@ -11,83 +11,60 @@ struct WorldSkillEventView: View {
     var body: some View {
         NavigationView{
             List{
-                HStack{
-                    
-                    NavigationLink(destination: GetView(), label: {
+                Section{
+                    HStack{
+                        
+                        NavigationLink(destination: GetView(), label: {
+                            
+                            Image("events_00_A")
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 100, height: 100)
+                                .cornerRadius(50)
+                                .opacity(0.9)
+                            VStack{
+                                Text("EVENT_0000")
+                                    .bold()
+                                    .font(.title3)
+                                Text("WorldSkills Competition")
+                                    .opacity(0.8)
+                                
+                            }
+                            Spacer()
+                            
+                        })
+                    }
+                    HStack{
                         
                         Image("events_00_A")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 100, height: 100)
-                        .cornerRadius(50)
-                        .opacity(0.9)
-                    VStack{
-                        Text("EVENT_0000")
-                            .bold()
-                            .font(.title3)
-                        Text("WorldSkills Competition")
-                            .opacity(0.8)
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 100, height: 100)
+                            .cornerRadius(50)
+                            .opacity(0.9)
+                        VStack{
+                            Text("EVENT_0000")
+                                .bold()
+                                .font(.title3)
+                            Text("WorldSkills Competition")
+                                .opacity(0.8)
                             
+                        }
+                        Spacer()
                     }
-                    Spacer()
-                        
-                    })
                 }
-                HStack{
-                    
-                        Image("events_00_A")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 100, height: 100)
-                        .cornerRadius(50)
-                        .opacity(0.9)
+                Section{
                     VStack{
-                        Text("EVENT_0000")
-                            .bold()
-                            .font(.title3)
-                        Text("WorldSkills Competition")
-                            .opacity(0.8)
-                            
+                        NavigationLink(destination: PostView(), label: {
+                            Text("See More...")
+                                .font(.title3)
+                                .foregroundColor(.blue)
+                        })
                     }
-                    Spacer()
+                } header: {
+                    Text("Setting")
                 }
-                HStack{
-                    
-                        Image("events_00_A")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 100, height: 100)
-                        .cornerRadius(50)
-                        .opacity(0.9)
-                    VStack{
-                        Text("EVENT_0000")
-                            .bold()
-                            .font(.title3)
-                        Text("WorldSkills Competition")
-                            .opacity(0.8)
-                            
-                    }
-                    Spacer()
-                }
-                HStack{
-                    
-                        Image("events_00_A")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 100, height: 100)
-                        .cornerRadius(50)
-                        .opacity(0.9)
-                    VStack{
-                        Text("EVENT_0000")
-                            .bold()
-                            .font(.title3)
-                        Text("WorldSkills Competition")
-                            .opacity(0.8)
-                            
-                    }
-                    Spacer()
-                }
-            }
+            }.navigationTitle("Events")
         }
     }
 }
