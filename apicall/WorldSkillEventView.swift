@@ -14,7 +14,7 @@ struct WorldSkillEventView: View {
                 Section{
                     HStack{
                         
-                        NavigationLink(destination: GetView(), label: {
+                        NavigationLink(destination: EventDetailView(), label: {
                             
                             Image("events_00_A")
                                 .resizable()
