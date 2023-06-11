@@ -25,6 +25,13 @@ struct ContentView: View {
                     Text("Post")
                 }.tag(2)
             }
+            
+            WorldSkillEventView().tabItem{
+                NavigationLink(destination: WorldSkillEventView()) {
+                    Image(systemName: "signpost.left")
+                    Text("Events")
+                }.tag(3)
+            }
         }
     }
 }
