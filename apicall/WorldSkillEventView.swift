@@ -36,21 +36,45 @@ struct WorldSkillEventView: View {
                     }
                     HStack{
                         
-                        Image("events_00_A")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 100, height: 100)
-                            .cornerRadius(50)
-                            .opacity(0.9)
-                        VStack{
-                            Text("EVENT_0000")
-                                .bold()
-                                .font(.title3)
-                            Text("WorldSkills Competition")
-                                .opacity(0.8)
+                        NavigationLink(destination: EventImageView(), label: {
+                            Image("events_00_B")
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 100, height: 100)
+                                .cornerRadius(50)
+                                .opacity(0.9)
+                            VStack{
+                                Text("Event Images")
+                                    .bold()
+                                    .font(.title3)
+                                Text("> Click me watch")
+                                    .opacity(0.8)
+                                
+                            }
                             
-                        }
-                        Spacer()
+                            Spacer()
+                        })
+                    }
+                    HStack{
+                        
+                        NavigationLink(destination: EventImageView(), label: {
+                            Image("events_00_C")
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 100, height: 100)
+                                .cornerRadius(50)
+                                .opacity(0.9)
+                            VStack{
+                                Text("Event Images2")
+                                    .bold()
+                                    .font(.title3)
+                                Text("> Click me watch")
+                                    .opacity(0.8)
+                                
+                            }
+                            
+                            Spacer()
+                        })
                     }
                 }
                 Section{
@@ -64,7 +88,8 @@ struct WorldSkillEventView: View {
                 } header: {
                     Text("Setting")
                 }
-            }.navigationTitle("Events")
+            }
+            .navigationTitle("Events")
         }
     }
 }
