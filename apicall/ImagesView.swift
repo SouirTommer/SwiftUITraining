@@ -15,16 +15,15 @@ struct ImagesView: View {
                     HStack(spacing: 20){
                         VStack{
                             Image("events_05_B")
-                                .resizable()
+                                
                                 .frame(width: 250, height: 300)
                                 
-                            Text("We Love Traveling Around\n the World")
+                            Text("Hello")
+                                .frame(maxWidth: .infinity, maxHeight: 60,alignment: .center)
+                                .background(Color.white.opacity(0.9))
                                 .font(.title3)
-                                .frame(maxWidth: .infinity, alignment: .center)
-                                .padding(.top, 1)
-                                .padding(.bottom, 10)
-                                
-                        }.background(Color(.white))
+                        }
+                        
                             .clipped()
                             .opacity(0.9)
                             .cornerRadius(10)
@@ -33,7 +32,7 @@ struct ImagesView: View {
                             Image("events_03_C")
                                 .resizable()
                                 .frame(width: 250, height: 300)
-                                
+                            
                             Text("We Love Traveling Around\n the World")
                                 .font(.title3)
                                 .frame(maxWidth: .infinity, alignment: .center)
