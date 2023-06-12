@@ -9,23 +9,51 @@ import SwiftUI
 
 struct GetView: View {
     @StateObject var api = viewModel()
+    @State var text = ""
+    @State var state = 0
     var body: some View {
-        NavigationView{
-            
-            List{
-                ForEach(api.participants, id: \.participantId){
-                    Participant in
-                    VStack(alignment: .leading){
-                        Text(Participant.participantName)
-                        Text(Participant.participantStream)
-                    }.padding()
+        HStack{
+            NavigationView{
+                VStack{
+                    HStack{
+                        TextField("Search...", text: $text)
+                            .cornerRadius(8)
+                            .padding(7)
+                            .padding(.horizontal, 25)
+                            .background(Color(.systemGray6))
+                        Button(action: {
+                            
+                        }, label: {
+                            Text("Search")
+                        })
+                        .padding()
+                    }
+                    HStack{
+                        Picker("Options", selection: $state) {
+                                    Text("On").tag(0)
+                                    Text("Off").tag(1)
+                                    Text("Test").tag(2)
+                                }
+                        .pickerStyle(.segmented)
+                        .padding()
+                        
+                            
+                    }
+                    List{
+                        ForEach(api.participants, id: \.participantId){
+                            Participant in
+                            VStack(alignment: .leading){
+                                Text(Participant.participantName)
+                                Text(Participant.participantStream)
+                            }.padding()
+                        }
+                        
+                    }.navigationTitle("WorldSkill - GET")
+                        .listStyle(.inset)
                 }
-                
-            }.navigationTitle("WorldSkill - GET")
-                .listStyle(.inset)
-            
-        }.onAppear{
-            api.fetch()
+            }.onAppear{
+                api.fetch()
+            }
         }
     }
 }
