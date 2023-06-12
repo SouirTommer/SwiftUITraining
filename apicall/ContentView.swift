@@ -32,6 +32,14 @@ struct ContentView: View {
                     Text("Events")
                 }.tag(3)
             }
+            
+            
+            ImagesView().tabItem{
+                NavigationLink(destination: ImagesView()){
+                    Image(systemName: "scribble.variable")
+                    Text("Arts")
+                }.tag(4)
+            }
         }
     }
 }

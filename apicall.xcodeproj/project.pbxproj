@@ -17,6 +17,7 @@
 		2A2DC4FA2A3612BE00E3421F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DC4F92A3612BE00E3421F /* MainView.swift */; };
 		2A2DC4FC2A3614DA00E3421F /* WorldSkillEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DC4FB2A3614DA00E3421F /* WorldSkillEventView.swift */; };
 		2A2DC4FE2A3626EE00E3421F /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DC4FD2A3626EE00E3421F /* EventDetailView.swift */; };
+		2A2DC5002A36DB7700E3421F /* ImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DC4FF2A36DB7700E3421F /* ImagesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		2A2DC4F92A3612BE00E3421F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		2A2DC4FB2A3614DA00E3421F /* WorldSkillEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldSkillEventView.swift; sourceTree = "<group>"; };
 		2A2DC4FD2A3626EE00E3421F /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
+		2A2DC4FF2A36DB7700E3421F /* ImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				2A2DC4DA2A33851C00E3421F /* GetView.swift */,
 				2A2DC4D42A30CD8900E3421F /* PostView.swift */,
 				2A2DC4FB2A3614DA00E3421F /* WorldSkillEventView.swift */,
+				2A2DC4FF2A36DB7700E3421F /* ImagesView.swift */,
 				2A2DC4FD2A3626EE00E3421F /* EventDetailView.swift */,
 				2A2DC4D62A30CDE400E3421F /* viewModel.swift */,
 				2A2DC4C32A30C1B000E3421F /* Assets.xcassets */,
@@ -159,6 +162,7 @@
 			files = (
 				2A2DC4FE2A3626EE00E3421F /* EventDetailView.swift in Sources */,
 				2A2DC4C22A30C1AE00E3421F /* ContentView.swift in Sources */,
+				2A2DC5002A36DB7700E3421F /* ImagesView.swift in Sources */,
 				2A2DC4FA2A3612BE00E3421F /* MainView.swift in Sources */,
 				2A2DC4DB2A33851C00E3421F /* GetView.swift in Sources */,
 				2A2DC4D52A30CD8900E3421F /* PostView.swift in Sources */,
