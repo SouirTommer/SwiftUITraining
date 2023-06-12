@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct EventDetailView: View {
+    @State private var isShowingOverlay = false
     var body: some View {
         VStack{
             Text("Event")
@@ -15,17 +16,24 @@ struct EventDetailView: View {
                 .bold()
                 .padding(.top, 80)
             VStack{
-                
-                Image("events_00_B")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 330, height: 200)
+                Button(action: {
+                            isShowingOverlay = true
+                }) {
+                    Image("events_00_B")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 330, height: 200)
+                }
                 VStack{
                     Text("This year, 61 international skill competitions will take place across Europe, North America, and East Asia from September to November 2022.")
                         .font(.callout)
                         .padding(20)
                 }
-            }
+            }.sheet(isPresented: $isShowingOverlay, content: {
+                Image("events_00_B")
+                    .resizable()
+                    .scaledToFit()
+            })
             
             Spacer()
         }
