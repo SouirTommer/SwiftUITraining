@@ -19,6 +19,7 @@
 		2A2DC4FE2A3626EE00E3421F /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DC4FD2A3626EE00E3421F /* EventDetailView.swift */; };
 		2A2DC5002A36DB7700E3421F /* ImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DC4FF2A36DB7700E3421F /* ImagesView.swift */; };
 		2A2DC5022A37149C00E3421F /* EventImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DC5012A37149C00E3421F /* EventImageView.swift */; };
+		2A2DC5042A37228200E3421F /* EventDetailView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DC5032A37228200E3421F /* EventDetailView2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		2A2DC4FD2A3626EE00E3421F /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
 		2A2DC4FF2A36DB7700E3421F /* ImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesView.swift; sourceTree = "<group>"; };
 		2A2DC5012A37149C00E3421F /* EventImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventImageView.swift; sourceTree = "<group>"; };
+		2A2DC5032A37228200E3421F /* EventDetailView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				2A2DC5012A37149C00E3421F /* EventImageView.swift */,
 				2A2DC4FF2A36DB7700E3421F /* ImagesView.swift */,
 				2A2DC4FD2A3626EE00E3421F /* EventDetailView.swift */,
+				2A2DC5032A37228200E3421F /* EventDetailView2.swift */,
 				2A2DC4D62A30CDE400E3421F /* viewModel.swift */,
 				2A2DC4C32A30C1B000E3421F /* Assets.xcassets */,
 				2A2DC4C52A30C1B000E3421F /* Preview Content */,
@@ -168,6 +171,7 @@
 				2A2DC5002A36DB7700E3421F /* ImagesView.swift in Sources */,
 				2A2DC4FA2A3612BE00E3421F /* MainView.swift in Sources */,
 				2A2DC4DB2A33851C00E3421F /* GetView.swift in Sources */,
+				2A2DC5042A37228200E3421F /* EventDetailView2.swift in Sources */,
 				2A2DC4D52A30CD8900E3421F /* PostView.swift in Sources */,
 				2A2DC4D72A30CDE400E3421F /* viewModel.swift in Sources */,
 				2A2DC5022A37149C00E3421F /* EventImageView.swift in Sources */,

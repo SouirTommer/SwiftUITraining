@@ -15,13 +15,14 @@ struct WorldSkillEventView: View {
                     HStack{
                         
                         NavigationLink(destination: EventDetailView(), label: {
-                            
-                            Image("events_00_A")
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 100, height: 100)
-                                .cornerRadius(50)
-                                .opacity(0.9)
+                            VStack{
+                                Image("events_00_A")
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: 100, height: 100)
+                                    .cornerRadius(50)
+                                    .opacity(0.9)
+                            }
                             VStack{
                                 Text("EVENT_0000")
                                     .bold()
@@ -37,12 +38,14 @@ struct WorldSkillEventView: View {
                     HStack{
                         
                         NavigationLink(destination: EventImageView(), label: {
-                            Image("events_00_B")
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 100, height: 100)
-                                .cornerRadius(50)
-                                .opacity(0.9)
+                            VStack{
+                                Image("events_00_B")
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: 100, height: 100)
+                                    .cornerRadius(50)
+                                    .opacity(0.9)
+                            }
                             VStack{
                                 Text("Event Images")
                                     .bold()
@@ -57,13 +60,15 @@ struct WorldSkillEventView: View {
                     }
                     HStack{
                         
-                        NavigationLink(destination: EventImageView(), label: {
-                            Image("events_00_C")
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 100, height: 100)
-                                .cornerRadius(50)
-                                .opacity(0.9)
+                        NavigationLink(destination: EventDetailView2(), label: {
+                            VStack{
+                                Image("events_00_C")
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: 100, height: 100)
+                                    .cornerRadius(50)
+                                    .opacity(0.9)
+                            }
                             VStack{
                                 Text("Event Images2")
                                     .bold()
