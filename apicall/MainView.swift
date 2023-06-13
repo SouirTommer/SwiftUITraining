@@ -60,8 +60,8 @@ struct MainView: View {
                         .background(Color.orange)
                         .cornerRadius(5)
                         VStack{
-                            Text("20000")
-                            Text("fund")
+                            Text("2023")
+                            Text("613")
                         }
                         .padding()
                         .frame(width: 170)
@@ -69,6 +69,7 @@ struct MainView: View {
                         .cornerRadius(5)
                     }.foregroundColor(.white)
                      .bold()
+                     .shadow(radius: 5)
                     
                     HStack{
                         ScrollView(.horizontal){
@@ -82,16 +83,16 @@ struct MainView: View {
                                 .background(Color(UIColor(named: "color1")!))
                                 .cornerRadius(5)
                                 VStack{
-                                    Text("20000")
-                                    Text("fund")
+                                    Text("Code9")
+                                    Text("So handsome")
                                 }
                                 .padding()
                                 .frame(width: 160)
                                 .background(Color(UIColor(named: "color1")!))
                                 .cornerRadius(5)
                                 VStack{
-                                    Text("20000")
-                                    Text("fund")
+                                    Text("Tommer")
+                                    Text("ya")
                                 }
                                 .padding()
                                 .frame(width: 160)
