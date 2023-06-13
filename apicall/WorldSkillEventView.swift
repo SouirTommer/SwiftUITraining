@@ -84,17 +84,25 @@ struct WorldSkillEventView: View {
                     }
                 }
                 Section{
-                    VStack{
                         Toggle(isOn: $yesno, label: {
                             Text("Test Mode")
                         })
-                    }
-                    VStack{
-                        NavigationLink(destination: PostView(), label: {
-                            Text("See More...")
-                                .foregroundColor(.blue)
-                        })
-                    }
+                        Button {
+                            
+                        } label: {
+                            HStack{
+                                Text("Terms of service")
+                                Spacer()
+                                Image(systemName: "list.bullet.rectangle.portrait.fill")
+                            }
+                        }.buttonStyle(.plain)
+                    
+                    NavigationLink(destination: PostView(), label: {
+                        Text("See More...")
+                            .foregroundColor(.blue)
+                    })
+                
+                    
                 } header: {
                     Text("Setting")
                 }
