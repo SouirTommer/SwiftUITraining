@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct WorldSkillEventView: View {
+    @State private var yesno = false
     var body: some View {
         NavigationView{
             List{
@@ -84,9 +85,13 @@ struct WorldSkillEventView: View {
                 }
                 Section{
                     VStack{
+                        Toggle(isOn: $yesno, label: {
+                            Text("Test Mode")
+                        })
+                    }
+                    VStack{
                         NavigationLink(destination: PostView(), label: {
                             Text("See More...")
-                                .font(.title3)
                                 .foregroundColor(.blue)
                         })
                     }

@@ -11,26 +11,32 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView{
+            MainView().tabItem{
+                NavigationLink(destination: MainView()) {
+                    Image(systemName: "house.fill")
+                    Text("Main")
+                }.tag(1)
+            }
             
             GetView().tabItem{
                 NavigationLink(destination: GetView()) {
                     Image(systemName: "target")
                     Text("Get")
-                }.tag(1)
+                }.tag(2)
             }
             
             PostView().tabItem{
                 NavigationLink(destination: PostView()) {
                     Image(systemName: "signpost.left")
                     Text("Post")
-                }.tag(2)
+                }.tag(3)
             }
             
             WorldSkillEventView().tabItem{
                 NavigationLink(destination: WorldSkillEventView()) {
                     Image(systemName: "paperplane")
                     Text("Events")
-                }.tag(3)
+                }.tag(4)
             }
             
             
@@ -38,7 +44,7 @@ struct ContentView: View {
                 NavigationLink(destination: ImagesView()){
                     Image(systemName: "scribble.variable")
                     Text("Arts")
-                }.tag(4)
+                }.tag(5)
             }
         }
     }
