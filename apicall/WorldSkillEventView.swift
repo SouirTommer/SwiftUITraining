@@ -9,6 +9,7 @@ import SwiftUI
 
 struct WorldSkillEventView: View {
     @State private var yesno = false
+    @State private var showAlert = false
     var body: some View {
         NavigationView{
             List{
@@ -88,7 +89,7 @@ struct WorldSkillEventView: View {
                             Text("Test Mode")
                         })
                         Button {
-                            
+                            showAlert = true
                         } label: {
                             HStack{
                                 Text("Terms of service")
@@ -96,6 +97,8 @@ struct WorldSkillEventView: View {
                                 Image(systemName: "list.bullet.rectangle.portrait.fill")
                             }
                         }.buttonStyle(.plain)
+                        .alert("Hello!", isPresented: $showAlert) {
+                        }
                     
                     NavigationLink(destination: PostView(), label: {
                         Text("See More...")
