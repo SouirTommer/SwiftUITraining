@@ -147,6 +147,62 @@ struct ImagesView: View {
                             
                         }
                         .padding()
+                    
+                    VStack{
+                        HStack(alignment: .top){
+                            VStack{
+                                Text("Hello World, my name is Tommer").fontWeight(.medium)
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                                Spacer()
+                                Text("2023-6-13").frame(maxWidth: .infinity, alignment: .leading)
+                            }
+                            Spacer()
+                            Image("events_08_B")
+                                .frame(width: 80, height: 80)
+                                .cornerRadius(15)
+                        }.padding()
+                    }
+                    .background(Color(UIColor(named: "color1")!))
+                    .cornerRadius(15)
+                    .padding(.horizontal)
+                    .padding(.vertical, 3)
+                    
+                    VStack{
+                        HStack(alignment: .top){
+                            VStack{
+                                Text("Hello World, my name is Tommer").fontWeight(.medium)
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                                Spacer()
+                                Text("2023-6-13").frame(maxWidth: .infinity, alignment: .leading)
+                            }
+                            Spacer()
+                            Image("events_08_B")
+                                .frame(width: 80, height: 80)
+                                .cornerRadius(15)
+                        }.padding()
+                    }
+                    .background(Color(UIColor(named: "color1")!))
+                    .cornerRadius(15)
+                    .padding(.horizontal)
+                    .padding(.vertical, 3)
+                    VStack{
+                        HStack(alignment: .top){
+                            VStack{
+                                Text("Hello World, my name is Tommer").fontWeight(.medium)
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                                Spacer()
+                                Text("2023-6-13").frame(maxWidth: .infinity, alignment: .leading)
+                            }
+                            Spacer()
+                            Image("events_08_B")
+                                .frame(width: 80, height: 80)
+                                .cornerRadius(15)
+                        }.padding()
+                    }
+                    .background(Color(UIColor(named: "color1")!))
+                    .cornerRadius(15)
+                    .padding(.horizontal)
+                    .padding(.vertical, 3)
                        
                 }
                 .navigationTitle("Arts")
