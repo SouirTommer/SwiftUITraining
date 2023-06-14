@@ -12,79 +12,80 @@ struct WorldSkillEventView: View {
     @State private var showAlert = false
     var body: some View {
         NavigationView{
-            List{
-                Section{
-                    HStack{
-                        
-                        NavigationLink(destination: EventDetailView(), label: {
-                            VStack{
-                                Image("events_00_A")
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(width: 100, height: 100)
-                                    .cornerRadius(50)
-                                    .opacity(0.9)
-                            }
-                            VStack{
-                                Text("EVENT_0000")
-                                    .bold()
-                                    .font(.title3)
-                                Text("WorldSkills Competition")
-                                    .opacity(0.8)
-                                
-                            }
-                            Spacer()
+            VStack{
+                List{
+                    Section{
+                        HStack{
                             
-                        })
-                    }
-                    HStack{
-                        
-                        NavigationLink(destination: EventImageView(), label: {
-                            VStack{
-                                Image("events_00_B")
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(width: 100, height: 100)
-                                    .cornerRadius(50)
-                                    .opacity(0.9)
-                            }
-                            VStack{
-                                Text("Event Images")
-                                    .bold()
-                                    .font(.title3)
-                                Text("> Click me watch")
-                                    .opacity(0.8)
+                            NavigationLink(destination: EventDetailView(), label: {
+                                VStack{
+                                    Image("events_00_A")
+                                        .resizable()
+                                        .scaledToFill()
+                                        .frame(width: 100, height: 100)
+                                        .cornerRadius(50)
+                                        .opacity(0.9)
+                                }
+                                VStack{
+                                    Text("EVENT_0000")
+                                        .bold()
+                                        .font(.title3)
+                                    Text("WorldSkills Competition")
+                                        .opacity(0.8)
+                                    
+                                }
+                                Spacer()
                                 
-                            }
+                            })
+                        }
+                        HStack{
                             
-                            Spacer()
-                        })
-                    }
-                    HStack{
-                        
-                        NavigationLink(destination: EventDetailView2(), label: {
-                            VStack{
-                                Image("events_00_C")
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(width: 100, height: 100)
-                                    .cornerRadius(50)
-                                    .opacity(0.9)
-                            }
-                            VStack{
-                                Text("Event Images2")
-                                    .bold()
-                                    .font(.title3)
-                                Text("> Click me watch")
-                                    .opacity(0.8)
+                            NavigationLink(destination: EventImageView(), label: {
+                                VStack{
+                                    Image("events_00_B")
+                                        .resizable()
+                                        .scaledToFill()
+                                        .frame(width: 100, height: 100)
+                                        .cornerRadius(50)
+                                        .opacity(0.9)
+                                }
+                                VStack{
+                                    Text("Event Images")
+                                        .bold()
+                                        .font(.title3)
+                                    Text("> Click me watch")
+                                        .opacity(0.8)
+                                    
+                                }
                                 
-                            }
+                                Spacer()
+                            })
+                        }
+                        HStack{
                             
-                            Spacer()
-                        })
+                            NavigationLink(destination: EventDetailView2(), label: {
+                                VStack{
+                                    Image("events_00_C")
+                                        .resizable()
+                                        .scaledToFill()
+                                        .frame(width: 100, height: 100)
+                                        .cornerRadius(50)
+                                        .opacity(0.9)
+                                }
+                                VStack{
+                                    Text("Event Images2")
+                                        .bold()
+                                        .font(.title3)
+                                    Text("> Click me watch")
+                                        .opacity(0.8)
+                                    
+                                }
+                                
+                                Spacer()
+                            })
+                        }
                     }
-                }
-                Section{
+                    Section{
                         Toggle(isOn: $yesno, label: {
                             Text("Test Mode")
                         })
@@ -97,20 +98,49 @@ struct WorldSkillEventView: View {
                                 Image(systemName: "list.bullet.rectangle.portrait.fill")
                             }
                         }.buttonStyle(.plain)
-                        .alert("Hello!", isPresented: $showAlert) {
+                            .alert("Hello!", isPresented: $showAlert) {
+                            }
+                        
+                        NavigationLink(destination: PostView(), label: {
+                            Text("See More...")
+                                .foregroundColor(.blue)
+                        })
+                        
+                        
+                    } header: {
+                        Text("Setting")
+                    }
+                    Section{
+                        ScrollView(.horizontal){
+                            HStack{
+                                Image("events_03_C")
+                                    .resizable()
+                                    .frame(width: 100, height: 100)
+                                    .cornerRadius(50)
+                                Image("events_04_C")
+                                    .resizable()
+                                    .frame(width: 100, height: 100)
+                                    .cornerRadius(50)
+                                Image("events_05_C")
+                                    .resizable()
+                                    .frame(width: 100, height: 100)
+                                    .cornerRadius(50)
+                                Image("events_06_C")
+                                    .resizable()
+                                    .frame(width: 100, height: 100)
+                                    .cornerRadius(50)
+                                Image("events_08_C")
+                                    .resizable()
+                                    .frame(width: 100, height: 100)
+                                    .cornerRadius(50)
+                            }.padding()
                         }
-                    
-                    NavigationLink(destination: PostView(), label: {
-                        Text("See More...")
-                            .foregroundColor(.blue)
-                    })
-                
-                    
-                } header: {
-                    Text("Setting")
+                    } header: {
+                        Text("Image")
+                    }
                 }
+                .navigationTitle("Events")
             }
-            .navigationTitle("Events")
         }
     }
 }

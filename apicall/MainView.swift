@@ -197,13 +197,12 @@ struct MainView: View {
                                     Text("2023-6-14").foregroundColor(.gray)
                                 }
                             }
+                            Spacer()
                             VStack{
                                 Image(systemName: "square.and.arrow.up.circle.fill")
                                     .resizable()
                                     .frame(width: 30, height: 30)
-                                    .padding(.horizontal, 10)
                             }.padding()
-                            Spacer()
                         }.padding()
                     }
                     .background(Color(UIColor(named: "color1")!))
