@@ -57,7 +57,7 @@ struct MainView: View {
                         }
                         .padding()
                         .frame(width: 170)
-                        .background(Color.orange)
+                        .background(Color.blue)
                         .cornerRadius(5)
                         VStack{
                             Text("2023")
@@ -65,7 +65,7 @@ struct MainView: View {
                         }
                         .padding()
                         .frame(width: 170)
-                        .background(Color.orange)
+                        .background(Color.blue)
                         .cornerRadius(5)
                     }.foregroundColor(.white)
                      .bold()
@@ -112,7 +112,7 @@ struct MainView: View {
                                     .frame(width: 110).cornerRadius(10)
                             }
                             VStack(spacing: 8){
-                                Text("Hello, I am a title").font(.title3)
+                                Text("A unforgettable Competition").font(.title3)
                                     .frame(maxWidth: .infinity, alignment: .leading)
                                     .bold()
                                 Text("Context")
@@ -128,7 +128,7 @@ struct MainView: View {
                                     .frame(width: 110).cornerRadius(10)
                             }
                             VStack(spacing: 8){
-                                Text("Hello, I am a title").font(.title3)
+                                Text("Thanks to partners").font(.title3)
                                     .frame(maxWidth: .infinity, alignment: .leading)
                                     .bold()
                                 Text("Context")
@@ -144,7 +144,7 @@ struct MainView: View {
                                     .frame(width: 110).cornerRadius(10)
                             }
                             VStack(spacing: 8){
-                                Text("Hello, I am a title").font(.title3)
+                                Text("WorldSkills Competition 2022").font(.title3)
                                     .frame(maxWidth: .infinity, alignment: .leading)
                                     .bold()
                                 Text("Context")
@@ -160,7 +160,7 @@ struct MainView: View {
                                     .frame(width: 110).cornerRadius(10)
                             }
                             VStack(spacing: 8){
-                                Text("Hello, I am a title").font(.title3)
+                                Text("International skill competitions").font(.title3)
                                     .frame(maxWidth: .infinity, alignment: .leading)
                                     .bold()
                                 Text("Context")

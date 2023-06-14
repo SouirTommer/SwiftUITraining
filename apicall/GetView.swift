@@ -17,16 +17,19 @@ struct GetView: View {
                 VStack{
                     HStack{
                         TextField("Search...", text: $text)
-                            .cornerRadius(8)
                             .padding(7)
-                            .padding(.horizontal, 25)
                             .background(Color(.systemGray6))
+                            .cornerRadius(10)
+                            .padding()
+                        
                         Button(action: {
                             
                         }, label: {
                             Text("Search")
                         })
+                        .padding(.horizontal, 15)
                         .padding()
+                        
                     }
                     HStack{
                         Picker("Options", selection: $state) {
