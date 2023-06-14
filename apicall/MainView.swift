@@ -170,6 +170,45 @@ struct MainView: View {
                         }
                     }.padding(.horizontal, 5)
                     .padding()
+                    VStack{
+                        HStack{
+                            Image("events_00_A")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                                .cornerRadius(50)
+                            Text("WorldSkill 2023")
+                                .bold()
+                            Spacer()
+                        }.padding()
+                        VStack{
+                            Text("Hello Souir_Tommer, welcome to worldskill")
+                        }
+                        HStack{
+                            Image("events_00_C")
+                                .resizable()
+                                .frame(width: 80, height: 80)
+                                .cornerRadius(50)
+                                .padding(.horizontal, 20)
+                            VStack(spacing: 5){
+                                Text("Tommer")
+                                Text("Hello World")
+                                
+                                VStack(spacing: 5){
+                                    Text("2023-6-14").foregroundColor(.gray)
+                                }
+                            }
+                            VStack{
+                                Image(systemName: "square.and.arrow.up.circle.fill")
+                                    .resizable()
+                                    .frame(width: 30, height: 30)
+                                    .padding(.horizontal, 10)
+                            }.padding()
+                            Spacer()
+                        }.padding()
+                    }
+                    .background(Color(UIColor(named: "color1")!))
+                    .cornerRadius(15)
+                    .padding()
                 }.navigationTitle("Welcome")
             }
         }
